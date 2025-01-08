@@ -1,0 +1,31 @@
+{
+	"name": "workout-app",
+	"version": "1.0.0",
+	"description": "Мое обучение backend",
+	"license": "ISC",
+	"author": "Демченко Богдан Александрович",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"start": "node ./server.js",
+		"dev": "nodemon ./server.js"
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.1",
+		"colors": "^1.4.0",
+		"morgan": "^1.10.0",
+		"nodemon": "^3.1.9",
+		"prettier": "^3.4.2"
+	},
+	"dependencies": {
+		"@faker-js/faker": "^9.3.0",
+		"@prisma/client": "^6.1.0",
+		"argon2": "^0.41.1",
+		"dotenv": "^16.4.7",
+		"express": "^4.21.2",
+		"express-async-handler": "^1.2.0",
+		"jsonwebtoken": "^9.0.2",
+		"pg": "^8.13.1",
+		"prisma": "^6.1.0"
+	}
+}
