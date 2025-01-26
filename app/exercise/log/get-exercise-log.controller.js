@@ -1,6 +1,6 @@
 import { prisma } from '../../prisma.js';
-import asyncHandler from 'express-async-handler';
 import { addPrevValues } from './add-prev-values.util.js';
+import asyncHandler from 'express-async-handler';
 
 //@desc Get exerciseLog
 //@route GET /api/exercise/log/:id

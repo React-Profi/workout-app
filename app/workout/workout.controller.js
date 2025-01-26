@@ -1,7 +1,6 @@
-import asyncHandler from 'express-async-handler';
-
 import { prisma } from '../prisma.js';
 import { calculateMinute } from './calculate-minute.js';
+import asyncHandler from 'express-async-handler';
 
 //@desc Get workout
 //@route GET /api/users/workout/:id

@@ -1,4 +1,9 @@
 import express from 'express';
+
+import { protect } from '../middleware/auth.middleware.js';
+import { getWorkoutLog } from './log/get-workout-log.controller.js';
+import { updateCompleteWorkoutLog } from './log/update-workout-log.controller.js';
+import { createNewWorkoutLog } from './log/workout-log.controller.js';
 import {
 	createNewWorkout,
 	deleteWorkout,
@@ -6,10 +11,6 @@ import {
 	getWorkouts,
 	updateWorkout
 } from './workout.controller.js';
-import { getWorkoutLog } from './log/get-workout-log.controller.js';
-import { updateCompleteWorkoutLog } from './log/update-workout-log.controller.js';
-import { protect } from '../middleware/auth.middleware.js';
-import { createNewWorkoutLog } from './log/workout-log.controller.js';
 
 export const router = express.Router();
 

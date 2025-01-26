@@ -1,14 +1,17 @@
-import { router as authRouter } from './app/auth/auth.routers.js';
-import { router as userRouter } from './app/user/user.routers.js';
-import express from 'express';
-import { router as exerciseRouter } from './app/exercise/exercise.routers.js';
-import { router as workoutRouter } from './app/workout/workout.routers.js';
-import path from 'path';
-import dotenv from 'dotenv';
-import morgan from 'morgan';
-import { prisma } from './app/prisma.js';
-import { errorHandler, notFound } from './app/middleware/error.middleware.js';
 import 'colors';
+import dotenv from 'dotenv';
+import express from 'express';
+import morgan from 'morgan';
+import path from 'path';
+
+import { errorHandler, notFound } from './app/middleware/error.middleware.js';
+
+import { router as authRouter } from './app/auth/auth.routers.js';
+import { router as exerciseRouter } from './app/exercise/exercise.routers.js';
+import { prisma } from './app/prisma.js';
+import { router as userRouter } from './app/user/user.routers.js';
+import { router as workoutRouter } from './app/workout/workout.routers.js';
+
 dotenv.config();
 
 const app = express();

@@ -1,7 +1,7 @@
-import jwt from 'jsonwebtoken';
-import asyncHandler from 'express-async-handler';
 import { prisma } from '../prisma.js';
 import { UserFields } from '../utils/user.utils.js';
+import asyncHandler from 'express-async-handler';
+import jwt from 'jsonwebtoken';
 
 export const protect = asyncHandler(async (req, res, next) => {
 	let token;

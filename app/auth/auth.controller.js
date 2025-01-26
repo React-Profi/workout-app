@@ -1,9 +1,9 @@
 import { prisma } from '../prisma.js';
-import asyncHandler from 'express-async-handler';
-import { faker } from '@faker-js/faker';
-import { generateToken } from './generate-token.js';
-import { hash, verify } from 'argon2';
 import { UserFields } from '../utils/user.utils.js';
+import { generateToken } from './generate-token.js';
+import { faker } from '@faker-js/faker';
+import { hash, verify } from 'argon2';
+import asyncHandler from 'express-async-handler';
 
 export const authUser = asyncHandler(async (req, res) => {
 	const { email, password } = req.body;

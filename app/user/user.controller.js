@@ -1,7 +1,6 @@
-import asyncHandler from 'express-async-handler';
-
 import { prisma } from '../prisma.js';
 import { UserFields } from '../utils/user.utils.js';
+import asyncHandler from 'express-async-handler';
 
 //@desc Get user profile
 //@route GET /api/users/profile
